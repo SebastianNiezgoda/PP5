@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+   
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Nazwa firmy</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="nazwa firmy" required>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput2">NIP</label>
+            <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="NIP" required>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput3">Miasto</label>
+            <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="Miasto" required>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput4">Ulica</label>
+            <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="Ulica" required>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput5">Numer domu</label>
+            <input type="text" class="form-control" id="exampleFormControlInput5" placeholder="Numer domu" required>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput6">Numer mieszkania</label>
+            <input type="text" class="form-control" id="exampleFormControlInput6" placeholder="numer mieszkania" required>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput7">Kod pocztowy</label>
+            <input type="text" pattern="^\d{2}-\d{3}$" class="form-control" id="exampleFormControlInput7" placeholder="Kod pocztowy" required>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput8">Branża</label>
+            <select class="form-control" id="exampleFormControlInput8">
+            <option>Wybierz branże</option>
+            <option>IT</option>
+            </select>
+          </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Uwagi</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Aktywny</label>
+          </div>
+
+          <button type="button" class="btn btn-primary" id="Submit-button">Submit</button>
+
+          <button type="button" class="btn btn-primary" id="fill">Wstaw dane</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+      
+  </body>
+</html>
