@@ -1,3 +1,5 @@
+var lista
+
 document.getElementById('Submit-button').addEventListener('click', function () {
 
     const requiredFields = [
@@ -32,6 +34,7 @@ document.getElementById('Submit-button').addEventListener('click', function () {
     };
     
     
+    
     console.log(data);
     });
     
@@ -63,8 +66,16 @@ document.getElementById('fill').addEventListener('click', function () {
     function showlist(){
         document.getElementById("customer-form").style.display="none"
         document.getElementById("customer-list").style.display="block"
+
+        let ul = document.getElementById("listaklientow");
+        ul.innerHTML +=`<li class="list-group-item></li>`
     }
     function showform(){
         document.getElementById("customer-form").style.display="block"
         document.getElementById("customer-list").style.display="none"
+    }
+
+    function addToList(){
+        var nazwaFirmyDoListy=document.getElementById("exampleFormControlInput1")
+        document.getElementById("list-group").append(nazwaFirmyDoListy)
     }
