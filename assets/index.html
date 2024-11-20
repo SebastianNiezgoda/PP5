@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Formularz</title>
+  </head>
+  <body>
+  
+    <div id="customer-form">
+
+      <form>
+
+          <div class="form-group">
+              <label class="first-element" for="company-name">Nazwa firmy</label>
+              <input type="text" class="form-control" id="company-name" placeholder="nazwa firmy" required>
+          </div>
+
+          <div class="form-group">
+              <label for="NIP">NIP</label>
+              <input type="number" class="form-control" id="NIP" placeholder="NIP" required>
+          </div>
+
+          <div class="form-group">
+              <label for="city">Miasto</label>
+              <input type="text" class="form-control" id="city" placeholder="Miasto" required>
+          </div>
+          <div class="form-group">
+              <label for="street">Ulica</label>
+              <input type="text" class="form-control" id="street" placeholder="Ulica" required>
+          </div>
+
+          <div class="form-group">
+              <label for="hn">Numer domu</label>
+              <input type="text" class="form-control" id="hn" placeholder="Numer domu" required>
+          </div>
+
+          <div class="form-group">
+              <label for="code">Kod pocztowy</label>
+              <input type="text" pattern="^\d{2}-\d{3}$" class="form-control" id="code" placeholder="Kod pocztowy" required>
+          </div>
+
+          <div class="form-group">
+              <label for="industry">Branża</label>
+              <select class="form-control" id="industry">
+              <option>Wybierz branże</option>
+              <option>IT</option>
+              </select>
+            </div>
+
+          <div class="form-group">
+              <labe class="last-element" for="uwagi">Uwagi</label>
+              <textarea class="form-control" id="uwagi" rows="3"></textarea>
+          </div>
+
+          <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck1">
+              <label class="custom-control-label" for="customCheck1">Aktywny</label>
+          </div>
+
+            <input type="hidden" id="currentEditClientId" value="">
+
+            <button type="button" class="btn btn-primary" id="Submit-button">Submit</button>
+
+            <button type="button" class="btn btn-primary" id="fill">Wstaw dane</button>
+
+            <button type="button" class="btn btn-primary" id="showMElist">Pokaż liste</button>
+
+      </form>
+
+  </div>
+
+  <div id="customer-list" style="display: none">
+      <hl id="Lista"></hl>
+      
+      <ul class="list-group" id="listaklientow">
+        <li id=""></li>
+        
+        
+
+      </ul>
+      <button type="button" class="btn btn-primary" id="showMeform">Dodaj klienta</button>
+      <button type="button" class="btn btn-secondary" id="edit-by-id">Edytuj po ID</button>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+      
+  </body>
+</html>
