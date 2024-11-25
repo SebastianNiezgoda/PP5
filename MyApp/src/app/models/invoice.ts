@@ -1,8 +1,8 @@
 class Invoice{
     constructor(){}
     
-    name: string;
-    quantity: number;
+    name: string =  " ";
+    quantity: number = 0;
     unit?: Unit;
     netto?: number;
     tax?: Tax;
