@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+$body-bg: #000; 
+$body-color: #f36de8; 
+$primary-color: red;
+
+
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+body {
+    .d-flex{
+        form{
+            .last-element label{
+                background-color: $primary-color;
+            }
+            .first-element label{
+                background-color: black;
+            }
+        }
+    }
+}
