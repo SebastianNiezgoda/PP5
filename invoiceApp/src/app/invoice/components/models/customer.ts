@@ -2,8 +2,8 @@ export class Customer {
    
         constructor(){}
     
-        companyname = "fsafasf";
-        nip="asfafa";
+        name = "";
+        nip="";
         city:String="";
         street="";
         hn="";
@@ -16,7 +16,7 @@ export class Customer {
         }
     
         getData():string{
-            return (`Company name: ${this.companyname}, Nip: ${this.nip}`)
+            return (`Company name: ${this.name}, Nip: ${this.nip}`)
     
         }
 }
